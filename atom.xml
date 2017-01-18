@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
-  
+  <title>Victor_Lo’s Blog</title>
+  <subtitle>多栖程序猿</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://laozhuorun.me/"/>
@@ -9,8 +9,8 @@
   <id>http://laozhuorun.me/</id>
   
   <author>
-    <name>Victor</name>
-    
+    <name>Victor_Lo</name>
+    <email>Victor_Lo@vapps.hk</email>
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
