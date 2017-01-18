@@ -2,13 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://laozhuorun.me/ABPboilerplate%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/index.html</loc>
-    
-    <lastmod>2017-01-18T07:55:01.362Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://laozhuorun.me//blog/2017/01/ABP.html</loc>
     
     <lastmod>2017-01-18T07:50:50.979Z</lastmod>
@@ -26,13 +19,6 @@
     <loc>http://laozhuorun.me/tags/index.html</loc>
     
     <lastmod>2017-01-18T07:07:39.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://laozhuorun.me//blog/2017/01/hello-world.html</loc>
-    
-    <lastmod>2017-01-18T02:18:25.193Z</lastmod>
     
   </url>
   
