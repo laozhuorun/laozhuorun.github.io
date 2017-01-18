@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Victor_Lo’s Blog</title>
-  <subtitle>多栖程序猿</subtitle>
+  
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://laozhuorun.me/"/>
@@ -9,7 +9,7 @@
   <id>http://laozhuorun.me/</id>
   
   <author>
-    <name>Victor_Lo</name>
+    <name>Victor</name>
     
   </author>
   
