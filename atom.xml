@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Victor_Lo’s Blog</title>
-  
+  <title>Victor_Lo</title>
+  <subtitle>My programming time zone</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://laozhuorun.me/"/>
@@ -9,7 +9,7 @@
   <id>http://laozhuorun.me/</id>
   
   <author>
-    <name>Victor</name>
+    <name>Victor_Lo</name>
     
   </author>
   
@@ -17,8 +17,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://laozhuorun.me/2017/01/18/hello-world/"/>
-    <id>http://laozhuorun.me/2017/01/18/hello-world/</id>
+    <link href="http://laozhuorun.me//blog/2017/01/hello-world.html"/>
+    <id>http://laozhuorun.me//blog/2017/01/hello-world.html</id>
     <published>2017-01-18T02:18:25.193Z</published>
     <updated>2017-01-18T02:18:25.193Z</updated>
     
