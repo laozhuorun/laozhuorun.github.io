@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://laozhuorun.me/"/>
-  <updated>2017-01-18T02:18:25.193Z</updated>
+  <updated>2017-01-18T07:50:50.979Z</updated>
   <id>http://laozhuorun.me/</id>
   
   <author>
@@ -14,6 +14,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ABP</title>
+    <link href="http://laozhuorun.me//blog/2017/01/ABP.html"/>
+    <id>http://laozhuorun.me//blog/2017/01/ABP.html</id>
+    <published>2017-01-18T07:50:16.000Z</published>
+    <updated>2017-01-18T07:50:50.979Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="ABP" scheme="http://laozhuorun.me/categories/ABP/"/>
+    
+    
+      <category term="ABP" scheme="http://laozhuorun.me/tags/ABP/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
