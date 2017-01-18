@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://laozhuorun.me/"/>
-  <updated>2017-01-18T07:50:50.979Z</updated>
+  <updated>2017-01-18T08:10:14.159Z</updated>
   <id>http://laozhuorun.me/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://laozhuorun.me//blog/2017/01/ABP.html"/>
     <id>http://laozhuorun.me//blog/2017/01/ABP.html</id>
     <published>2017-01-18T07:50:16.000Z</published>
-    <updated>2017-01-18T07:50:50.979Z</updated>
+    <updated>2017-01-18T08:10:14.159Z</updated>
     
     <summary type="html">
     
@@ -30,6 +30,8 @@
     
     
       <category term="ABP" scheme="http://laozhuorun.me/tags/ABP/"/>
+    
+      <category term=".Net" scheme="http://laozhuorun.me/tags/Net/"/>
     
   </entry>
   
