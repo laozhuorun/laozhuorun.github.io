@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://laozhuorun.me/"/>
-  <updated>2017-01-19T06:56:17.863Z</updated>
+  <updated>2017-01-19T06:58:06.138Z</updated>
   <id>http://laozhuorun.me/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://laozhuorun.me//blog/2017/01/ABP%E7%AE%80%E4%BB%8B.html"/>
     <id>http://laozhuorun.me//blog/2017/01/ABP简介.html</id>
     <published>2017-01-18T07:50:16.000Z</published>
-    <updated>2017-01-19T06:56:17.863Z</updated>
+    <updated>2017-01-19T06:58:06.138Z</updated>
     
     <content type="html"><![CDATA[<p><img src="http://ok0d190vi.bkt.clouddn.com/abp_logo.png" alt="ABP Logo"></p>
 <p>PS：此文章内容大部分采自 <a href="http://home.cnblogs.com/u/mienreal/" target="_blank" rel="external">阳光铭睿</a> 的Blog，因为大部分都是概念，我只是稍做修改作为自己的笔记记录下来，方便日后的学习记录</p>
@@ -78,7 +78,7 @@
 <li>基于.Net Core , Asp.net Mvc  / .Net Framework , Asp.net Mvc 的MPA后台</li>
 <li>基于 .Net Framework/Core 和 Asp.net Mvc的MPA前台</li>
 </ul>
-<p>使用Asp.net Zero  你可以快速的构建一个基础的CMS项目(PS:价格有点小贵建议可以通过团购的方式获取代码学习使用，但如果是企业，还是建议单独购买授权，但是zero使用的Metronic UI个人觉得并不好美观，有能力的人完全可以使用基于Vue2的Element或基于React的Ant design取代)</p>
+<p>使用Asp.net Zero  你可以快速的构建一个基础的CMS项目(PS:价格有点小贵，建议个人可以通过团购的方式获取代码学习使用，但如果是企业，还是建议单独购买授权，但是zero使用的Metronic UI个人觉得并不好美观，有能力的人完全可以使用基于Vue2的Element或基于React的Ant design取代)</p>
 </blockquote>
 <h2 id="ABP不是什么？"><a href="#ABP不是什么？" class="headerlink" title="ABP不是什么？"></a>ABP不是什么？</h2><blockquote>
 <p>ABP 提供了一个应用程序开发模型用于最佳实践。它拥有基础类、接口和工具使我们容易建立起可维护的大规模的应用程序。</p>
