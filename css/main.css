@@ -1200,7 +1200,6 @@ pre .javascript .function {
   box-sizing: border-box;
   margin: auto;
   padding: 3px;
-  border: 1px solid #ddd;
 }
 .posts-expand .fancybox img {
   margin: 0 auto;
@@ -1685,7 +1684,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffffe0;
+  background: #e960ff;
 }
 .links-of-blogroll {
   font-size: 13px;
