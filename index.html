@@ -386,9 +386,16 @@
       
         
           
-            <p><img src="http://ok0d190vi.bkt.clouddn.com/abp_logo.png" alt="ABP Logo"></p>
+          
 
           
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/blog/2017/01/创建第一个ABP项目.html#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -548,78 +555,18 @@
       
         
           
-            <p><img src="http://ok0d190vi.bkt.clouddn.com/abp_logo.png" alt="ABP Logo"></p>
-<p>PS：此文章内容大部分采自 <a href="http://home.cnblogs.com/u/mienreal/" target="_blank" rel="external">阳光铭睿</a> 的Blog，因为大部分都是概念，我只是稍做修改作为自己的笔记记录下来，方便日后的学习记录</p>
-<h1 id="ABP简介"><a href="#ABP简介" class="headerlink" title="ABP简介"></a>ABP简介</h1><blockquote>
-<p>ABP是由土耳其人：<a href="https://github.com/hikalkan" target="_blank" rel="external">Halil İbrahim Kalkan</a> 发起的.Net 开源框架，开源在<a href="https://github.com/aspnetboilerplate" target="_blank" rel="external">Github</a>，是“ASP.NET Boilerplate Project”的简称。目前Star数量超过2K，Fork超过1K，就目前的情况来看，是.Net 阵容中Web开发最好的开源框架，没有之一   ！</p>
-<p><a href="http://www.aspnetboilerplate.com" target="_blank" rel="external">ABP的官网网站</a></p>
-<p><a href="https://github.com/aspnetboilerplate" target="_blank" rel="external">Github项目地址</a></p>
-</blockquote>
-<h2 id="关于ABP的由来"><a href="#关于ABP的由来" class="headerlink" title="关于ABP的由来"></a>关于ABP的由来</h2><blockquote>
-<p>“DRY——避免重复代码”是一个优秀的开发者在开发软件时所具备的最重要的思想之一。我们在开发企业WEB应用程序时都有一些类似的需求，例如：都需要登录页面、用户/角色管理、权限验证、数据有效性验证、多语言/本地化等等。一个高品质的大型软件都会运用一些最佳实践，例如分层体系结构、领域驱动设计、依赖注入等。我们也可能会采用ORM、数据库迁移（Database Migrations）、日志记录（Logging）等工具。</p>
-<p>从零开始创建一个企业应用程序是一件繁琐的事，因为需要重复做很多常见的基础工作。许多公司都在开发自己的应用程序框架来重用于不同的项目，然后在框架的基础上开发一些新的功能。但并不是每个公司都有这样的实力。假如我们可以分享的更多，也许可以避免每个公司或每个项目的重复编写类似的代码。作者之所以把项目命名为“ASP.NET Boilerplate”，就是希望它能成为开发一般企业WEB应用的新起点，直接把ABP作为项目模板。</p>
-</blockquote>
-<h2 id="ABP是什么"><a href="#ABP是什么" class="headerlink" title="ABP是什么"></a>ABP是什么</h2><blockquote>
-<p>ABP是为新的现代Web应用程序使用最佳实践和使用最流行工具的一个起点。可作为一般用途的应用程序的基础框架或项目模板。它的功能包括：</p>
-<h3 id="服务端"><a href="#服务端" class="headerlink" title="服务端"></a>服务端</h3><ul>
-<li>基于最新的.NET技术 （ASP.NET MVC 5、Web API 2、C# 5.0、.Net Framework/Core）</li>
-<li>实现领域驱动设计（实体、仓储、领域服务、领域事件、应用服务、数据传输对象，工作单元等等）</li>
-<li>实现分层体系结构（领域层，应用层，展现层和基础设施层）</li>
-<li>提供了一个基础架构来开发可重用可配置的模块</li>
-<li>集成一些最流行的开源框架/库，也许有些是你正在使用的。</li>
-<li>提供了一个基础架构让我们很方便地使用依赖注入（使用Castle Windsor作为依赖注入的容器）</li>
-<li>提供Repository仓储模式支持不同的ORM（已实现Entity Framework 、NHibernate、MangoDb和内存数据库）</li>
-<li>支持并实现数据库迁移（EF 的 Code first）</li>
-<li>集成缓存服务(MachineCache，Redis等)</li>
-<li>模块化开发（每个模块有独立的EF DbContext，可单独指定数据库）</li>
-<li>包括一个简单的和灵活的多语言/本地化系统</li>
-<li>包括一个 EventBus来实现服务器端全局的领域事件</li>
-<li>统一的异常处理（应用层几乎不需要处理自己写异常处理代码）</li>
-<li>数据有效性验证（Asp.NET MVC只能做到Action方法的参数验证，ABP实现了Application层方法的参数有效性验证）</li>
-<li>通过Application Services自动创建Web Api层（不需要写ApiController层了）</li>
-<li>提供基类和帮助类让我们方便地实现一些常见的任务</li>
-<li>使用“约定优于配置原则”</li>
-</ul>
-<h3 id="客户端"><a href="#客户端" class="headerlink" title="客户端"></a>客户端</h3><ul>
-<li>Bootstrap、Less、AngularJs2、jQuery、Modernizr 和其他JS库: jQuery.validate、jQuery.form、jQuery.blockUI、json2等</li>
-<li>为单页面应用程序（AngularJs、Durandaljs）和多页面应用程序（Bootstrap+Jquery）提供了项目模板。</li>
-<li>自动创建Javascript 的代理层来更方便使用Web Api</li>
-<li>封装一些Javascript 函数，更方便地使用ajax、消息框、通知组件、请求状态遮罩层等等</li>
-</ul>
-</blockquote>
-<h2 id="除了ABP，作者还开发了以下项目"><a href="#除了ABP，作者还开发了以下项目" class="headerlink" title="除了ABP，作者还开发了以下项目"></a>除了ABP，作者还开发了以下项目</h2><h3 id="免费开源模块-Module-zero，实现了以下功能"><a href="#免费开源模块-Module-zero，实现了以下功能" class="headerlink" title="免费开源模块 Module -zero，实现了以下功能"></a>免费开源模块 Module -zero，实现了以下功能</h3><blockquote>
-<ul>
-<li>身份验证与授权管理（通过ASP.NET Identity实现的）</li>
-<li>用户&amp;角色管理</li>
-<li>系统设置存取管理（系统级、租户级、用户级，作用范围自动管理）</li>
-<li>审计日志（自动记录每一次接口的调用者和参数）</li>
-</ul>
-</blockquote>
-<h3 id="付费授权项目-ASP-NET-ZERO"><a href="#付费授权项目-ASP-NET-ZERO" class="headerlink" title="付费授权项目 ASP.NET  ZERO"></a>付费授权项目 ASP.NET  ZERO</h3><blockquote>
-<p><a href="https://www.aspnetzero.com" target="_blank" rel="external">项目官网</a></p>
-<p>ASP.NET Zero 是基于ABP和Module zero，使用了Metronic UI，提供了 Material design 风格的基础实现，提供一个现代风格的Web基础项目，让你节省时间，可以更多的关注业务代码；</p>
-<p>ASP.NET Zero提供了多个不同架构的项目以满足大部分人的需求</p>
-<ul>
-<li>基于.Net Core , Angular2.x / .Net Framework , Angular1.x 的SPA后台</li>
-<li>基于.Net Core , Asp.net Mvc  / .Net Framework , Asp.net Mvc 的MPA后台</li>
-<li>基于 .Net Framework/Core 和 Asp.net Mvc的MPA前台</li>
-</ul>
-<p>使用Asp.net Zero  你可以快速的构建一个基础的CMS项目(PS:价格有点小贵，建议个人可以通过团购的方式获取代码学习使用，但如果是企业，还是建议单独购买授权，但是zero使用的Metronic UI个人觉得并不好美观，有能力的人完全可以使用基于Vue2的Element或基于React的Ant design取代)</p>
-</blockquote>
-<h2 id="ABP不是什么？"><a href="#ABP不是什么？" class="headerlink" title="ABP不是什么？"></a>ABP不是什么？</h2><blockquote>
-<p>ABP 提供了一个应用程序开发模型用于最佳实践。它拥有基础类、接口和工具使我们容易建立起可维护的大规模的应用程序，注意ABP并不是一个支持高并发的框架，如果对性能有非常高要求的，建议不要使用或自己修改源码优化。</p>
-<p>然而：</p>
-<p>它不是RAD工具之一，RAD工具的目的是无需编码创建应用程序。相反，ABP提供了一种编码的最佳实践。</p>
-<p>它不是一个代码生成工具。在运行时虽然它有一些特性构建动态代码，但它不能生成代码( 可以使用工具)。</p>
-<p>它不是一个一体化的框架。相反，它使用流行的工具/库来完成特定的任务（例如用EF做ORM，用Log4Net做日志记录，使得Castle Windsor作为赖注入容器， AngularJs 用于SPA 框架）。</p>
-<p>就我使用了ABP几个月的经验来看，虽然ABP不是RAD，但是用它开发项目绝对比传统三层架构要快很多。</p>
-<p>虽然ABP不是代码生成工具，但因为有了它，使我们项目的代码更简洁规范，这有利于使用代码生成工具。</p>
-<p>我自己使用VS2015的Scaffolder+T4开发的代码生成器(<a href="http://home.cnblogs.com/u/mienreal/" target="_blank" rel="external">阳光铭睿</a>团队开发开发的ABP代码生成器)，可根据领域对象的UML类图自动生成全部前后端代码和数据库，简单的CURD模块几乎不需要编写代码，有复杂业务逻辑的模块主要补充领域层代码即可。这样就能把时间多花在领域模型的设计上，减少写代码的时间。</p>
-</blockquote>
-<p>参考资料</p>
-<p><a href="http://www.cnblogs.com/mienreal/p/4532077.html" target="_blank" rel="external">基于DDD的现代ASP.NET开发框架–ABP系列之2、ABP入门教程</a></p>
-
           
+PS：此文章内容大部分采自 阳光铭睿 的Blog，因为大部分都是概念，我只是稍做修改作为自己的笔记记录下来，方便日后的学习记录
+ABP简介
+ABP是由土耳其人：Halil İbrahim Kalkan 发起的.Net 开源框架，开源在Github，是“ASP.NET Boilerplate Pro
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/blog/2017/01/ABP简介.html#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
