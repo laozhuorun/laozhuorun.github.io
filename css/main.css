@@ -1201,6 +1201,11 @@ pre .javascript .function {
   margin: auto;
   padding: 3px;
 }
+.posts-expand .fancybox div#wechat,
+.posts-expand .fancybox div#zhifubao {
+  width: 50%;
+  float: left;
+}
 .posts-expand .fancybox img {
   margin: 0 auto;
 }
@@ -1799,7 +1804,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #42fbff;
+  background: #cd870a;
 }
 .links-of-blogroll {
   font-size: 13px;
