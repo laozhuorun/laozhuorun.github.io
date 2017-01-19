@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://laozhuorun.me/"/>
-  <updated>2017-01-19T05:03:23.408Z</updated>
+  <updated>2017-01-19T05:07:37.064Z</updated>
   <id>http://laozhuorun.me/</id>
   
   <author>
@@ -20,10 +20,10 @@
     <link href="http://laozhuorun.me//blog/2017/01/ABP%E7%AE%80%E4%BB%8B.html"/>
     <id>http://laozhuorun.me//blog/2017/01/ABP简介.html</id>
     <published>2017-01-18T07:50:16.000Z</published>
-    <updated>2017-01-19T05:03:23.408Z</updated>
+    <updated>2017-01-19T05:07:37.064Z</updated>
     
     <content type="html"><![CDATA[<p><img src="http://ok0d190vi.bkt.clouddn.com/abp_logo.png" alt="ABP Logo"></p>
-<p>PS：此文章内容大部分来自 <a href="http://home.cnblogs.com/u/mienreal/" target="_blank" rel="external">阳光铭睿</a> 的Blog，我只是参考后稍做修改作为自己的笔记记录下来，方便日后的学习记录</p>
+<p>PS：此文章内容大部分采自 <a href="http://home.cnblogs.com/u/mienreal/" target="_blank" rel="external">阳光铭睿</a> 的Blog，因为大部分都是概念，我只是稍做修改作为自己的笔记记录下来，方便日后的学习记录</p>
 <h1 id="基于DDD的现代ASP-NET开发框架"><a href="#基于DDD的现代ASP-NET开发框架" class="headerlink" title="基于DDD的现代ASP.NET开发框架"></a>基于DDD的现代ASP.NET开发框架</h1><blockquote>
 <p>ABP是由土耳其人：<a href="https://github.com/hikalkan" target="_blank" rel="external">Halil İbrahim Kalkan</a> 发起的.Net 开源框架，开源在<a href="https://github.com/aspnetboilerplate" target="_blank" rel="external">Github</a>，是“ASP.NET Boilerplate Project”的简称。目前Star数量超过2K，Fork超过1K，就目前的情况来看，是.Net 阵容中Web开发最好的开源框架，没有之一!</p>
 <p><a href="http://www.aspnetboilerplate.com" target="_blank" rel="external">ABP的官网网站</a></p>
@@ -74,7 +74,7 @@
     <summary type="html">
     
       &lt;p&gt;&lt;img src=&quot;http://ok0d190vi.bkt.clouddn.com/abp_logo.png&quot; alt=&quot;ABP Logo&quot;&gt;&lt;/p&gt;
-&lt;p&gt;PS：此文章内容大部分来自 &lt;a href=&quot;http://home.cnblogs.com/u/mienreal
+&lt;p&gt;PS：此文章内容大部分采自 &lt;a href=&quot;http://home.cnblogs.com/u/mienreal
     
     </summary>
     
