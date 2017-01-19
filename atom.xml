@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://laozhuorun.me/"/>
-  <updated>2017-01-19T07:05:13.576Z</updated>
+  <updated>2017-01-19T07:27:55.561Z</updated>
   <id>http://laozhuorun.me/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>ABP</title>
+    <title>基于DDD的现代ASP.NET开发框架--ABP简介</title>
     <link href="http://laozhuorun.me//blog/2017/01/ABP%E7%AE%80%E4%BB%8B.html"/>
     <id>http://laozhuorun.me//blog/2017/01/ABP简介.html</id>
     <published>2017-01-18T07:50:16.000Z</published>
-    <updated>2017-01-19T07:05:13.576Z</updated>
+    <updated>2017-01-19T07:27:55.561Z</updated>
     
     <content type="html"><![CDATA[<p><img src="http://ok0d190vi.bkt.clouddn.com/abp_logo.png" alt="ABP Logo"></p>
 <p>PS：此文章内容大部分采自 <a href="http://home.cnblogs.com/u/mienreal/" target="_blank" rel="external">阳光铭睿</a> 的Blog，因为大部分都是概念，我只是稍做修改作为自己的笔记记录下来，方便日后的学习记录</p>
@@ -102,6 +102,8 @@
     </summary>
     
       <category term="ABP" scheme="http://laozhuorun.me/categories/ABP/"/>
+    
+      <category term=".Net" scheme="http://laozhuorun.me/categories/ABP/Net/"/>
     
     
       <category term="ABP" scheme="http://laozhuorun.me/tags/ABP/"/>
