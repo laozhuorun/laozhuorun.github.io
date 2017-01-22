@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://laozhuorun.me/"/>
-  <updated>2017-01-19T08:09:04.164Z</updated>
+  <updated>2017-01-22T02:28:22.526Z</updated>
   <id>http://laozhuorun.me/</id>
   
   <author>
@@ -14,6 +14,41 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Laravel简介</title>
+    <link href="http://laozhuorun.me//blog/2017/01/Laravel%E7%AE%80%E4%BB%8B.html"/>
+    <id>http://laozhuorun.me//blog/2017/01/Laravel简介.html</id>
+    <published>2017-01-22T01:37:25.000Z</published>
+    <updated>2017-01-22T02:28:22.526Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://ok0d190vi.bkt.clouddn.com/1ad5ad6eddc451dae74e4b1db6fd5266d116328f.jpg" alt="laravel"></p>
+<h1 id="Laravel-是什么"><a href="#Laravel-是什么" class="headerlink" title="Laravel 是什么"></a>Laravel 是什么</h1><p>Laravel 是使用 PHP 语言编写的网页程序开发框架，目的是为开发者提供常用组件，简化网页程序的开发。只需编写较少的代码，就能实现其他编程语言或框架难以企及的功能。经验丰富的 PHP 程序员会发现，Laravel 让程序开发变得更有乐趣。</p>
+<p>Laravel 哲学</p>
+<ul>
+<li>Laravel 是一套富有表达性且具有简洁语法的网页应用程序框架。我们认为开发过程应该是愉悦且有创造性的体验。Laravel 努力减少开发过程中的不便，因此我们提供了验证(authentication)、路由(routing)、sessions、缓存(caching)等开发过程中经常用到的工具或功能。</li>
+<li>Laravel 目标是给开发者创造一个愉快的开发过程，并且不牺牲应用程序的功能性。快乐的开发者才能创造最棒的代码。为了这个目的，我们竭取了各框架的优点集中到 Laravel 中，这些框架包括并不局限于 Ruby on Rails、ASP.NET MVC 和 Sinatra 等。</li>
+<li>Laravel 是易于理解且强大的，它提供了强大的工具来开发大型、稳健的应用程序。杰出的 IOC、数据库迁移工具和紧密集成的单元测试，这些工具赋予您构建任何大小规模的应用程序的能力。</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://ok0d190vi.bkt.clouddn.com/1ad5ad6eddc451dae74e4b1db6fd5266d116328f.jpg&quot; alt=&quot;laravel&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;Laravel-是什么&quot;&gt;&lt;a href=
+    
+    </summary>
+    
+      <category term="PHP" scheme="http://laozhuorun.me/categories/PHP/"/>
+    
+      <category term="laravel" scheme="http://laozhuorun.me/categories/PHP/laravel/"/>
+    
+    
+      <category term="Laravel" scheme="http://laozhuorun.me/tags/Laravel/"/>
+    
+      <category term="PHP" scheme="http://laozhuorun.me/tags/PHP/"/>
+    
+  </entry>
   
   <entry>
     <title>创建第一个ABP项目</title>
