@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://laozhuorun.me/"/>
-  <updated>2017-02-09T06:21:43.783Z</updated>
+  <updated>2017-02-09T06:26:32.903Z</updated>
   <id>http://laozhuorun.me/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://laozhuorun.me//blog/2017/02/Webpack-%E7%AE%80%E4%BB%8B.html"/>
     <id>http://laozhuorun.me//blog/2017/02/Webpack-简介.html</id>
     <published>2017-02-09T03:38:17.000Z</published>
-    <updated>2017-02-09T06:21:43.783Z</updated>
+    <updated>2017-02-09T06:26:32.903Z</updated>
     
     <content type="html"><![CDATA[<p><img src="http://ok0d190vi.bkt.clouddn.com/1059768984-56effff2d75c0_articlex.png" alt="Webpack"></p>
 <h2 id="1-前言"><a href="#1-前言" class="headerlink" title="1.前言"></a>1.前言</h2><p>博主最近在学习Angluar 2，发现学习曲线还是蛮陡峭的，Angluar 2集成了大量的新的前端技术，如果你之前没有接触过前端，从现在起要开始有心里准备了哦（心里一万只草泥马正在路过~~），在学习NG2之前我们先了解一下Webpack，目前前端最火的打包工具。</p>
@@ -117,6 +117,7 @@
 </blockquote>
 </li>
 </ul>
+<p>有关Webpack的简介先简述到这里，由于angluar-cli 中已经集成了webpack，我们不再需要单独安装，大家对webpack有个基本的了解就可以了，这里就不再做更加深入的探讨了。</p>
 ]]></content>
     
     <summary type="html">
