@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://laozhuorun.me/"/>
-  <updated>2017-02-09T08:22:07.488Z</updated>
+  <updated>2017-02-09T08:24:37.662Z</updated>
   <id>http://laozhuorun.me/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://laozhuorun.me//blog/2017/02/Angular2-%E5%85%A5%E9%97%A8-%E4%BD%BF%E7%94%A8angular-cli%E5%BF%AB%E9%80%9F%E5%BB%BA%E7%AB%8B%E9%A1%B9%E7%9B%AE.html"/>
     <id>http://laozhuorun.me//blog/2017/02/Angular2-入门-使用angular-cli快速建立项目.html</id>
     <published>2017-02-09T06:34:39.000Z</published>
-    <updated>2017-02-09T08:22:07.488Z</updated>
+    <updated>2017-02-09T08:24:37.662Z</updated>
     
     <content type="html"><![CDATA[<p><img src="https://angular.cn/resources/images/logos/angular2/angular.svg" alt="Angular2"></p>
 <h2 id="1-前言"><a href="#1-前言" class="headerlink" title="1.前言"></a>1.前言</h2><p>时下web前端发展迅猛，新框架层出不穷，大家都知道三驾马车Vue2，Angular2，React。国内Vue2非常热门，百度热点趋势以1000%的涨幅在增加。Angular2在国外非常受欢迎，在国内的粉丝还非常少，文章不多，究其原因有这么几点:</p>
@@ -54,7 +54,7 @@
 <h3 id="安装-Angular-CLI"><a href="#安装-Angular-CLI" class="headerlink" title="安装 Angular CLI"></a>安装 Angular CLI</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">windows： npm install -g angular-cli</div><div class="line"></div><div class="line">macOS: sudo npm install -g angular-cli</div></pre></td></tr></table></figure>
 <h3 id="创建Angluar-2项目"><a href="#创建Angluar-2项目" class="headerlink" title="创建Angluar 2项目"></a>创建Angluar 2项目</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ng new project_name,project_name是你的项目名；</div></pre></td></tr></table></figure>
 <p><img src="http://ok0d190vi.bkt.clouddn.com/QQ%E6%88%AA%E5%9B%BE20170209150611.jpg" alt="创建ng2项目"></p>
-<p>上图就是创建的过程，此时在创建中，npm正在下载相关的包，时间可能会比较长，请耐心等待10分钟左右就可以看到 successfully created的成果提示，现在我们已经成功的创建了一个Ng2项目；</p>
+<p>上图就是创建的过程，此时在创建中，npm正在下载相关的包，时间可能会比较长，请耐心等待10分钟左右就可以看到<em>successfully created</em>的成功提示，现在我们已经成功的创建了一个Ng2项目；</p>
 <p>我们来看一下项目结构（推荐使用VSCode打开）：</p>
 <p><img src="http://ok0d190vi.bkt.clouddn.com/QQ%E6%88%AA%E5%9B%BE20170209151600.jpg" alt="ng2项目结构"></p>
 <ul>
