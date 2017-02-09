@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://laozhuorun.me/"/>
-  <updated>2017-02-09T06:26:32.903Z</updated>
+  <updated>2017-02-09T07:56:02.514Z</updated>
   <id>http://laozhuorun.me/</id>
   
   <author>
@@ -16,11 +16,102 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Angular2 入门-使用angular-cli快速建立项目</title>
+    <link href="http://laozhuorun.me//blog/2017/02/Angular2-%E5%85%A5%E9%97%A8-%E4%BD%BF%E7%94%A8angular-cli%E5%BF%AB%E9%80%9F%E5%BB%BA%E7%AB%8B%E9%A1%B9%E7%9B%AE.html"/>
+    <id>http://laozhuorun.me//blog/2017/02/Angular2-入门-使用angular-cli快速建立项目.html</id>
+    <published>2017-02-09T06:34:39.000Z</published>
+    <updated>2017-02-09T07:56:02.514Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://angular.cn/resources/images/logos/angular2/angular.svg" alt="Angular2"></p>
+<h2 id="1-前言"><a href="#1-前言" class="headerlink" title="1.前言"></a>1.前言</h2><p>时下web前端发展迅猛，新框架层出不穷，大家都知道三驾马车Vue2，Angular2，React。国内Vue2非常热门，百度热点趋势以1000%的涨幅在增加。Angular2在国外非常受欢迎，在国内的粉丝还非常少，文章不多，究其原因有这么几点:</p>
+<ol>
+<li>angular本身概念难懂，并且学习曲线陡峭，上手困难;</li>
+<li>使用typescript开发，用到很多es6特性;</li>
+<li>配置太多，复杂，工程架构搭建上手难度大。</li>
+</ol>
+<p>本文为了解决项目搭建的问题，详细的一步步演示了如何使用angular-cli搭建angular2项目。</p>
+<h2 id="2-Angular-CLI简介"><a href="#2-Angular-CLI简介" class="headerlink" title="2 Angular-CLI简介"></a>2 Angular-CLI简介</h2><p>Angular-CLI 是 Google Angular 核心团队提供的开发工具，是Angluar2官方推荐的构建工具，集成了大量的 NodeJS 模块，例如：webpack，karma，asmine，typescript 编译器等。只要一条命令就能帮你自动创建项目的目录结构、自动帮你生成 Component 骨架代码并自动添加依赖、自动热加载代码、对 AngularMaterial2 组件库提供了内置支持等等。</p>
+<p>生产中搭建Angular2的前端架构一般有三种选择：</p>
+<ol>
+<li>自己一点点的搭建，这种对开发者要求比较高，必须对框架具有很深入的理解和很丰富的使用经验，否则搭建起来会遇到非常多的问题；</li>
+<li>直接使用Angular2 seed，一些国外优秀程序员在github上已经贡献了，非常感激！</li>
+<li>使用angular2提供的Angular CLI来快速搭建，他本质也是使用了webpack来编译，打包，压缩等构建的事情，适合想用<em>webpack</em>的特性又不想学习<em>webpack</em>那些复杂的配置的开发者；</li>
+</ol>
+<h2 id="3-AngularCLI主要特性"><a href="#3-AngularCLI主要特性" class="headerlink" title="3.AngularCLI主要特性"></a>3.AngularCLI主要特性</h2><ol>
+<li>Angular CLI 可以快速搭建框架，创建module，service，class，directive等；</li>
+<li>具有webpack的功能，代码分割（code splitting），按需加载；</li>
+<li>代码打包压缩；</li>
+<li>模块测试，端到端测试；</li>
+<li>热部署，有改动立即重新编译，不用刷新浏览器；而且速度很快</li>
+<li>有开发环境，测试环境，生产环境的配置，不用自己操心</li>
+<li>sass，less的预编译Angular CLI都会自动识别后缀来编译</li>
+<li>typescript的配置，Angular CLI在创建应用时都可以自己配置</li>
+<li>在创建好的工程也可以做一些个性化的配置，webpack的具体配置还不支持，未来可能会增加；</li>
+<li>Angular CLI创建的工程结构是最佳实践，生产可用；</li>
+</ol>
+<h2 id="4-开始搭建Angluar2项目"><a href="#4-开始搭建Angluar2项目" class="headerlink" title="4.开始搭建Angluar2项目"></a>4.开始搭建Angluar2项目</h2><p>说了这么多废话，我们现在马上开始创建一个Angluar2项目吧</p>
+<p>在创建项目之前你自行安装好<code>NodeJS 5.0</code>以上，<code>NPM 3.0</code>以上并且安装好 <code>Python2.7</code>(注意不支持3.6)，并且修改npm为国内源（<em>淘宝</em> or <em>cnpmjs</em>）以提高npm包的下载速度</p>
+<h3 id="安装-Angular-CLI"><a href="#安装-Angular-CLI" class="headerlink" title="安装 Angular CLI"></a>安装 Angular CLI</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">windows： npm install -g angular-cli</div><div class="line"></div><div class="line">macOS: sudo npm install -g angular-cli</div></pre></td></tr></table></figure>
+<h3 id="创建Angluar-2项目"><a href="#创建Angluar-2项目" class="headerlink" title="创建Angluar 2项目"></a>创建Angluar 2项目</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ng new project_name,project_name是你的项目名；</div></pre></td></tr></table></figure>
+<p><img src="http://ok0d190vi.bkt.clouddn.com/QQ%E6%88%AA%E5%9B%BE20170209150611.jpg" alt="创建ng2项目"></p>
+<p>上图就是创建的过程，此时在创建中，npm正在下载相关的包，时间可能会比较长，请耐心等待10分钟左右就可以看到 successfully created的成果提示，现在我们已经成功的创建了一个Ng2项目；</p>
+<p>我们来看一下项目结构（推荐使用VSCode打开）：</p>
+<p><img src="http://ok0d190vi.bkt.clouddn.com/QQ%E6%88%AA%E5%9B%BE20170209151600.jpg" alt="ng2项目结构"></p>
+<ul>
+<li><em>angular-cli.json</em> ：angular-cli的配置文件；</li>
+<li><em>karma.conf.js</em>：测试配置文件，Karma是一个基于Node.js的JavaScript测试执行过程管理工具（Test Runner）。该工具可用于测试所有主流Web浏览器，也可集成到CI（Continuous integration）工具，也可和其他代码编辑器一起使用；</li>
+<li><em>tslint.json</em>：typescript的lint配置文件；</li>
+<li><em>protractor.conf.js</em>：端到端的测试配置文件，protractor是 ng 团队构建的一个端对端的测试运行工具,模拟用户交互,帮助你验证你的Angular应用的运行状况；</li>
+<li><em>polyfills.ts</em>：导入es6模块的配置文件；</li>
+<li><em>main.ts</em>：angular工程的引导启动文件；</li>
+<li><em>style.css</em>：全局样式；</li>
+<li><em>ts.config.json</em>：typescript配置文件；</li>
+<li><em>typings.d.ts</em>：typescript的声明文件；</li>
+<li>app.component.css/html/spec.ts/ts：默认生成的ng2组件</li>
+</ul>
+<p>这些配置都是angular2的生产项目中需要配置的文件，我们只用了一个命令，看来angular-cli已经帮我们做了很多事情，接下来你只需要使用这些工具就好了；</p>
+<h3 id="启动Angluar2项目"><a href="#启动Angluar2项目" class="headerlink" title="启动Angluar2项目"></a>启动Angluar2项目</h3><p>首先让我们切换到刚刚创建的ng2目录然后运行npm start命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd ng2</div><div class="line">npm start</div></pre></td></tr></table></figure>
+<p>然后浏览器访问 <code>Http://localhost:4200</code>，即可看到</p>
+<p><img src="http://ok0d190vi.bkt.clouddn.com/QQ%E6%88%AA%E5%9B%BE20170209152918.jpg" alt="localhost:4200"></p>
+<blockquote>
+<p>熟悉npm的同学应该都知道：<code>npm start</code>，这个命令写在package.json文件scripts的start字段中，可以自定义命令来配置一个服务器环境和安装一系列的必要程序。</p>
+<p>我们来看下package.json 文件的script字段</p>
+<p><img src="http://ok0d190vi.bkt.clouddn.com/QQ%E6%88%AA%E5%9B%BE20170209153556.jpg" alt="package.json"></p>
+<p>此时在cmd中输入npm start命令相当于执行<code>ng server</code>命令，默认启动的端口是4200，如果你想指定端口启动，把start稍作修改就好：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&gt; &quot;start&quot;: &quot;ng serve --host 0.0.0.0 --port 5200 --live-reload-port 5201&quot;</div><div class="line">&gt;</div></pre></td></tr></table></figure>
+</blockquote>
+<p>&gt;</p>
+<blockquote>
+<p>live-reload-port ：gulp即时刷新 <code>livereload server</code>,修改项目src中任意的文件都可以看到浏览器自动刷新。</p>
+<p>如果package.json文件没有设置start，则将直接启动node server，可以看到Script中还有其他的字段，使用的方法以及原理，与start是一致的</p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://angular.cn/resources/images/logos/angular2/angular.svg&quot; alt=&quot;Angular2&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;1-前言&quot;&gt;&lt;a href=&quot;#1-前言&quot; class=&quot;header
+    
+    </summary>
+    
+      <category term="前端" scheme="http://laozhuorun.me/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="Angluar 2" scheme="http://laozhuorun.me/categories/%E5%89%8D%E7%AB%AF/Angluar-2/"/>
+    
+    
+      <category term="前端" scheme="http://laozhuorun.me/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="Angluar 2" scheme="http://laozhuorun.me/tags/Angluar-2/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Webpack 简介</title>
     <link href="http://laozhuorun.me//blog/2017/02/Webpack-%E7%AE%80%E4%BB%8B.html"/>
     <id>http://laozhuorun.me//blog/2017/02/Webpack-简介.html</id>
     <published>2017-02-09T03:38:17.000Z</published>
-    <updated>2017-02-09T06:26:32.903Z</updated>
+    <updated>2017-02-09T07:19:50.320Z</updated>
     
     <content type="html"><![CDATA[<p><img src="http://ok0d190vi.bkt.clouddn.com/1059768984-56effff2d75c0_articlex.png" alt="Webpack"></p>
 <h2 id="1-前言"><a href="#1-前言" class="headerlink" title="1.前言"></a>1.前言</h2><p>博主最近在学习Angluar 2，发现学习曲线还是蛮陡峭的，Angluar 2集成了大量的新的前端技术，如果你之前没有接触过前端，从现在起要开始有心里准备了哦（心里一万只草泥马正在路过~~），在学习NG2之前我们先了解一下Webpack，目前前端最火的打包工具。</p>
