@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://laozhuorun.me/"/>
-  <updated>2017-02-09T08:06:41.940Z</updated>
+  <updated>2017-02-09T08:22:07.488Z</updated>
   <id>http://laozhuorun.me/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://laozhuorun.me//blog/2017/02/Angular2-%E5%85%A5%E9%97%A8-%E4%BD%BF%E7%94%A8angular-cli%E5%BF%AB%E9%80%9F%E5%BB%BA%E7%AB%8B%E9%A1%B9%E7%9B%AE.html"/>
     <id>http://laozhuorun.me//blog/2017/02/Angular2-入门-使用angular-cli快速建立项目.html</id>
     <published>2017-02-09T06:34:39.000Z</published>
-    <updated>2017-02-09T08:06:41.940Z</updated>
+    <updated>2017-02-09T08:22:07.488Z</updated>
     
     <content type="html"><![CDATA[<p><img src="https://angular.cn/resources/images/logos/angular2/angular.svg" alt="Angular2"></p>
 <h2 id="1-前言"><a href="#1-前言" class="headerlink" title="1.前言"></a>1.前言</h2><p>时下web前端发展迅猛，新框架层出不穷，大家都知道三驾马车Vue2，Angular2，React。国内Vue2非常热门，百度热点趋势以1000%的涨幅在增加。Angular2在国外非常受欢迎，在国内的粉丝还非常少，文章不多，究其原因有这么几点:</p>
@@ -85,6 +85,49 @@
 <blockquote>
 <p>live-reload-port ：gulp即时刷新 <code>livereload server</code>,修改项目src中任意的文件都可以看到浏览器自动刷新，尝试的修改一下app.component.ts中的文字，看看热部署是否马上生效？yes！it does！</p>
 <p>如果package.json文件没有设置start，则将直接启动node server，可以看到Script中还有其他的字段，使用的方法以及原理，与start是一致的</p>
+<p>关于Angluar-cli使用的几个基本命令</p>
+<table>
+<thead>
+<tr>
+<th><em>Scaffold</em></th>
+<th><em>Usage</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Component</td>
+<td>ng g component new-component</td>
+</tr>
+<tr>
+<td>Directive</td>
+<td>ng g directive new-directive</td>
+</tr>
+<tr>
+<td>Pipe</td>
+<td>ng g pipe new-pipe</td>
+</tr>
+<tr>
+<td>Service</td>
+<td>ng g service new-service</td>
+</tr>
+<tr>
+<td>Class</td>
+<td>ng g class new-class</td>
+</tr>
+<tr>
+<td>Interface</td>
+<td>ng g interface new-interface</td>
+</tr>
+<tr>
+<td>Enum</td>
+<td>ng g enum new-enum</td>
+</tr>
+<tr>
+<td>Module</td>
+<td>ng g module my-module</td>
+</tr>
+</tbody>
+</table>
 </blockquote>
 ]]></content>
     
@@ -268,9 +311,9 @@
       <category term="Laravel" scheme="http://laozhuorun.me/categories/PHP/Laravel/"/>
     
     
-      <category term="PHP" scheme="http://laozhuorun.me/tags/PHP/"/>
-    
       <category term="Laravel" scheme="http://laozhuorun.me/tags/Laravel/"/>
+    
+      <category term="PHP" scheme="http://laozhuorun.me/tags/PHP/"/>
     
   </entry>
   
@@ -304,9 +347,9 @@
       <category term="laravel" scheme="http://laozhuorun.me/categories/PHP/laravel/"/>
     
     
-      <category term="PHP" scheme="http://laozhuorun.me/tags/PHP/"/>
-    
       <category term="Laravel" scheme="http://laozhuorun.me/tags/Laravel/"/>
+    
+      <category term="PHP" scheme="http://laozhuorun.me/tags/PHP/"/>
     
   </entry>
   
