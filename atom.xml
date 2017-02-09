@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://laozhuorun.me/"/>
-  <updated>2017-01-22T04:13:14.453Z</updated>
+  <updated>2017-02-09T04:17:51.659Z</updated>
   <id>http://laozhuorun.me/</id>
   
   <author>
@@ -14,6 +14,64 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Webpack 简介</title>
+    <link href="http://laozhuorun.me//blog/2017/02/Webpack-%E7%AE%80%E4%BB%8B.html"/>
+    <id>http://laozhuorun.me//blog/2017/02/Webpack-简介.html</id>
+    <published>2017-02-09T03:38:17.000Z</published>
+    <updated>2017-02-09T04:17:51.659Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://ok0d190vi.bkt.clouddn.com/1059768984-56effff2d75c0_articlex.png" alt="Webpack"></p>
+<h2 id="1-前言"><a href="#1-前言" class="headerlink" title="1.前言"></a>1.前言</h2><p>博主最近在学习Angluar 2，发现学习曲线还是蛮陡峭的，Angluar 2集成了大量的新的前端技术，如果你之前没有接触过前端，从现在起要开始有心里准备了哦（心里一万只草泥马正在路过~~），在学习NG2之前我们先了解一下Webpack，目前前端最火的打包工具。</p>
+<h2 id="2-Webpack是什么"><a href="#2-Webpack是什么" class="headerlink" title="2.Webpack是什么"></a>2.Webpack是什么</h2><p>随着前端项目越来越复杂（尤其是大型SPA），以及命名空间混乱，一系列模块加载器随之而生(前端的同学应该深有体会)，最有名的加载器有：Webpack、RequireJS、SeaJS、Bowserify，今天我们的主角是Webpack。</p>
+<p>Webpack是一个强力的模块打包器。 所谓<em>包(bundle)</em>就是一个JavaScript文件，它把一堆<em>资源(assets)</em>合并在一起，以便它们可以在同一个文件请求中发回给客户端。 包中可以包含JavaScript、CSS样式、HTML以及很多其它类型的文件。</p>
+<blockquote>
+<p>bundle：后端同学应该对bundle一点都不陌生，在.net ,java和php中都有（但主要已动态压缩为主，即程序启动后压缩文件并存储在内存中，因此也有不少暗吭），主要作用是对Js和Css进行打包压缩，在减少网页请求数量的同时提高网页的打开速度，同时一定程度上减少对服务器资源的访问压力</p>
+</blockquote>
+<h2 id="3-Webpack特性功能？"><a href="#3-Webpack特性功能？" class="headerlink" title="3.Webpack特性功能？"></a>3.Webpack特性功能？</h2><ul>
+<li>代码分离</li>
+</ul>
+<blockquote>
+<p>Webpack有两种依赖声明方式：同步与异步。异步方式，将依赖分割成多个节点，然后每个节点形成一个新的文件块。经过优化后的文件块树，会以一个个文件形式分发出去（仅仅打包成一个大文件形式是很低效的，详见）。</p>
+</blockquote>
+<ul>
+<li>加载器插件</li>
+</ul>
+<blockquote>
+<p>原生的Webpack只能处理JS文件，使用加载器插件，可以将其他资源专为JS资源。通过这种方式来加载，每一种资源都可以被Webpack看作是一个模块来加载。</p>
+</blockquote>
+<ul>
+<li>智能模块解析</li>
+</ul>
+<blockquote>
+<p>Webpack内置一个智能加载模块，可以用于处理几乎所有的第三方库。它甚至可以解析依赖声明的表达式，比如 require(“./templates” + name + “.jade”)。Webpack会处理最常见的JS模块标准：CommonJS 和 AMD。</p>
+</blockquote>
+<ul>
+<li>插件系统</li>
+</ul>
+<blockquote>
+<p>Webpack的最大特点，就是配套了非常丰富的插件系统。大部分内置特性功能都是基于这套插件系统。它可以让你根据需要自定义Webpack，将一般插件作为开源项目发布出去。</p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://ok0d190vi.bkt.clouddn.com/1059768984-56effff2d75c0_articlex.png&quot; alt=&quot;Webpack&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;1-前言&quot;&gt;&lt;a href=&quot;#1-前言&quot; class=
+    
+    </summary>
+    
+      <category term="前端" scheme="http://laozhuorun.me/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="Angluar 2" scheme="http://laozhuorun.me/categories/%E5%89%8D%E7%AB%AF/Angluar-2/"/>
+    
+    
+      <category term="前端" scheme="http://laozhuorun.me/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="Angluar 2" scheme="http://laozhuorun.me/tags/Angluar-2/"/>
+    
+  </entry>
   
   <entry>
     <title>Laravel的基本概念</title>
