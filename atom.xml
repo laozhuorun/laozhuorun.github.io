@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://laozhuorun.me/"/>
-  <updated>2017-02-09T04:17:51.659Z</updated>
+  <updated>2017-02-09T06:21:43.783Z</updated>
   <id>http://laozhuorun.me/</id>
   
   <author>
@@ -20,14 +20,14 @@
     <link href="http://laozhuorun.me//blog/2017/02/Webpack-%E7%AE%80%E4%BB%8B.html"/>
     <id>http://laozhuorun.me//blog/2017/02/Webpack-简介.html</id>
     <published>2017-02-09T03:38:17.000Z</published>
-    <updated>2017-02-09T04:17:51.659Z</updated>
+    <updated>2017-02-09T06:21:43.783Z</updated>
     
     <content type="html"><![CDATA[<p><img src="http://ok0d190vi.bkt.clouddn.com/1059768984-56effff2d75c0_articlex.png" alt="Webpack"></p>
 <h2 id="1-前言"><a href="#1-前言" class="headerlink" title="1.前言"></a>1.前言</h2><p>博主最近在学习Angluar 2，发现学习曲线还是蛮陡峭的，Angluar 2集成了大量的新的前端技术，如果你之前没有接触过前端，从现在起要开始有心里准备了哦（心里一万只草泥马正在路过~~），在学习NG2之前我们先了解一下Webpack，目前前端最火的打包工具。</p>
 <h2 id="2-Webpack是什么"><a href="#2-Webpack是什么" class="headerlink" title="2.Webpack是什么"></a>2.Webpack是什么</h2><p>随着前端项目越来越复杂（尤其是大型SPA），以及命名空间混乱，一系列模块加载器随之而生(前端的同学应该深有体会)，最有名的加载器有：Webpack、RequireJS、SeaJS、Bowserify，今天我们的主角是Webpack。</p>
 <p>Webpack是一个强力的模块打包器。 所谓<em>包(bundle)</em>就是一个JavaScript文件，它把一堆<em>资源(assets)</em>合并在一起，以便它们可以在同一个文件请求中发回给客户端。 包中可以包含JavaScript、CSS样式、HTML以及很多其它类型的文件。</p>
 <blockquote>
-<p>bundle：后端同学应该对bundle一点都不陌生，在.net ,java和php中都有（但主要已动态压缩为主，即程序启动后压缩文件并存储在内存中，因此也有不少暗吭），主要作用是对Js和Css进行打包压缩，在减少网页请求数量的同时提高网页的打开速度，同时一定程度上减少对服务器资源的访问压力</p>
+<p>bundle：后端同学应该对bundle一点都不陌生，在.net ,java和php中都有（主要以动态压缩为主，即程序启动后压缩文件并存储在内存中，因此也有不少暗坑），主要作用是对Js和Css进行打包压缩，在减少网页请求数量的同时提高网页的打开速度，同时一定程度上减少对服务器资源的访问压力</p>
 </blockquote>
 <h2 id="3-Webpack特性功能？"><a href="#3-Webpack特性功能？" class="headerlink" title="3.Webpack特性功能？"></a>3.Webpack特性功能？</h2><ul>
 <li>代码分离</li>
@@ -53,6 +53,70 @@
 <blockquote>
 <p>Webpack的最大特点，就是配套了非常丰富的插件系统。大部分内置特性功能都是基于这套插件系统。它可以让你根据需要自定义Webpack，将一般插件作为开源项目发布出去。</p>
 </blockquote>
+<h2 id="4-Webpack安装"><a href="#4-Webpack安装" class="headerlink" title="4.Webpack安装"></a>4.Webpack安装</h2><p>通过NPM包管理器</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g webpack</div></pre></td></tr></table></figure>
+<p>项目中初始化Webpack</p>
+<p>最优的方式就是，在项目中声明Webpack依赖。通过声明依赖，可以选择一个本地的Webpack版本，而不需要使用全局声明的版本。</p>
+<p>添加一个npm 配置文件package.json：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm init</div></pre></td></tr></table></figure>
+<p>然后需要回答一系列问题。如果希望把自己项目发布到npm上面，这些问题的回答非常重要。（如果不需要的话，一直回车就好啦）</p>
+<p>安装webpack、添加依赖到package.json</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install webpack --save-dev</div></pre></td></tr></table></figure>
+<p>其中–save-dev就是声明在开发阶段需要用到webpack，并且自动把webpack依赖写到package.json配置文件上面，生产环境就不需要安装（上生产环境时候，webpack已经把项目打包好啦，不需要它老人家出马了^_^）</p>
+<h2 id="5-Webpack在Angluar-2中的使用"><a href="#5-Webpack在Angluar-2中的使用" class="headerlink" title="5. Webpack在Angluar 2中的使用"></a>5. Webpack在Angluar 2中的使用</h2><p>在Angular2项目中，我们通过一个JavaScript配置文件<code>webpack.config.js</code>来决定Webpack做什么以及如何做。</p>
+<ul>
+<li><p>入口与输出(Entries and outputs)</p>
+<blockquote>
+<p>我们给Webpack提供一个或多个<em>入口</em>文件，来让它查找与合并那些从这些入口点发散出去的依赖。 在下面这个例子中，我们的入口点是该应用的根文件:<code>src/main.ts</code>：</p>
+<p><code>webpack.config.js(signle entry)</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&gt; entry: &#123;</div><div class="line">&gt;   app: &apos;src/app.ts&apos;</div><div class="line">&gt; &#125;</div><div class="line">&gt;</div></pre></td></tr></table></figure>
+</blockquote>
+<p>&gt;</p>
+<blockquote>
+<p><code>src/main.ts</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&gt; import &#123; Component &#125; from &apos;@angular/core&apos;;</div><div class="line">&gt;</div><div class="line">&gt; @Component(&#123;</div><div class="line">&gt;   ...</div><div class="line">&gt; &#125;)</div><div class="line">&gt; export class AppComponent &#123;&#125;</div><div class="line">&gt;</div></pre></td></tr></table></figure>
+</blockquote>
+<p>&gt;</p>
+<blockquote>
+<p>这里，Webpack看到我们正在导入<em>@angular/core</em>，于是就这个文件加入到它的依赖列表里，为(有可能)把该文件打进包中做准备。 它打开<em>@angular/core</em>并追踪由<em>该文件的</em><code>import</code>语句构成的网络，直到构建出从<code>app.ts</code>往下的整个依赖图谱。</p>
+<p>然后它把这些文件<strong>输出</strong>到当前配置所指定的<em>包文件</em><code>app.js</code>中：</p>
+<p><code>webpack.config.js(signle entry)</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&gt; output: &#123;</div><div class="line">&gt;   filename: &apos;app.js&apos;</div><div class="line">&gt; &#125;</div><div class="line">&gt;</div></pre></td></tr></table></figure>
+</blockquote>
+<p>&gt;</p>
+<blockquote>
+<p>这个<code>app.js</code>输出包是个单一的JavaScript文件，它包含程序的源码及其所有依赖。 后面我们将在<code>index.html</code>中用``标签来加载它。</p>
+<hr>
+<p>我们可能不会希望把所有东西打进一个巨型包，而更喜欢把多变的应用代码从相对稳定的第三方模块中分离出来。</p>
+<p>所以要修改配置，以获得两个入口点：<code>app.ts</code>和<code>vendor.ts</code>：</p>
+<p>webpack.config.js(two entries)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&gt; entry: &#123;</div><div class="line">&gt;   app: &apos;src/app.ts&apos;,</div><div class="line">&gt;   vendor: &apos;src/vendor.ts&apos;</div><div class="line">&gt; &#125;,</div><div class="line">&gt;</div><div class="line">&gt; output: &#123;</div><div class="line">&gt;   filename: &apos;[name].js&apos;</div><div class="line">&gt; &#125;</div><div class="line">&gt;</div></pre></td></tr></table></figure>
+</blockquote>
+<p>&gt;</p>
+<blockquote>
+<p>Webpack会构造出两个独立的依赖图谱，并产出<em>两个</em>包文件：一个叫做<code>app.js</code>，它只包含我们的应用代码；另一个叫做<code>vendor.js</code>，它包含所有的第三方依赖。</p>
+<p><code>在输出文件名中出现的</code>[name]<code>是一个Webpack的*占位符*，它将被替换为入口点的名字，分别是</code>app<code>和</code>vendor。</p>
+</blockquote>
+</li>
+<li><p>加载器(Loader)</p>
+<blockquote>
+<p>Webpack可以打包任何类型的文件：JavaScript、TypeScript、CSS、SASS、LESS、图片、HTML以及字体文件等等。 Webpack本身并不知道该如何处理这些非JavaScript文件。 我们要通过<em>加载器</em>来告诉它如何把这些文件处理成JavaScript文件。 在这里，我们为TypeScript和CSS文件配置了加载器。</p>
+<p>webpack.config.js(two entries):</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&gt; loaders: [</div><div class="line">&gt;   &#123;</div><div class="line">&gt;     test: /\.ts$/</div><div class="line">&gt;     loaders: &apos;ts&apos;</div><div class="line">&gt;   &#125;,</div><div class="line">&gt;   &#123;</div><div class="line">&gt;     test: /\.css$/</div><div class="line">&gt;     loaders: &apos;style!css&apos;</div><div class="line">&gt;   &#125;</div><div class="line">&gt; ]</div><div class="line">&gt;</div></pre></td></tr></table></figure>
+</blockquote>
+<p>&gt;</p>
+<blockquote>
+<p>当Webpack遇到像这样的<code>import</code>语句时……</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&gt; import &#123; AppComponent &#125; from &apos;./app.component.ts&apos;;</div><div class="line">&gt; import &apos;uiframework/dist/uiframework.css&apos;;</div><div class="line">&gt;</div></pre></td></tr></table></figure>
+</blockquote>
+<p>&gt;</p>
+<blockquote>
+<p>……它会使用<code>test</code>后面的正则表达式进行模式匹配。如果一个模式匹配上文件名，Webpack就用它所关联的加载器处理这个文件。</p>
+<p>第一个<code>import</code>文件匹配上了<code>.ts</code>模式，于是Webpack就用<code>awesome-typescript-loader</code>加载器处理它。 导入的文件没有匹配上第二个模式，于是它的加载器就被忽略了。</p>
+<p>第二个<code>import</code>匹配上了第二个<code>.css</code>模式，它有两个用叹号字符(<code>!</code>)串联起来的加载器。 Webpack会<em>从右到左</em>逐个应用串联的加载器，于是它先应用了<code>css</code>加载器(用来平面化CSS的<code>@import</code>和<code>url(...)</code>语句)， 然后应用了<code>style</code>加载器(用来把css追加到页面上的**元素中)。</p>
+</blockquote>
+</li>
+</ul>
 ]]></content>
     
     <summary type="html">
