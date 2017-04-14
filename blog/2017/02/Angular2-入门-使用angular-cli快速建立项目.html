@@ -105,7 +105,10 @@ angular本身概念难懂，并且学习曲线陡峭，上手困难;
 <meta property="og:image" content="http://ok0d190vi.bkt.clouddn.com/QQ%E6%88%AA%E5%9B%BE20170209151600.jpg">
 <meta property="og:image" content="http://ok0d190vi.bkt.clouddn.com/QQ%E6%88%AA%E5%9B%BE20170209152918.jpg">
 <meta property="og:image" content="http://ok0d190vi.bkt.clouddn.com/QQ%E6%88%AA%E5%9B%BE20170209153556.jpg">
-<meta property="og:updated_time" content="2017-02-09T08:24:37.662Z">
+<meta property="og:image" content="http://ok0d190vi.bkt.clouddn.com/QQ%E6%88%AA%E5%9B%BE20170209172459.jpg">
+<meta property="og:image" content="http://ok0d190vi.bkt.clouddn.com/%E5%88%9B%E5%BB%BA%E6%96%B0component.png">
+<meta property="og:image" content="http://ok0d190vi.bkt.clouddn.com/%E5%88%9B%E5%BB%BA%E6%96%B0module.jpg">
+<meta property="og:updated_time" content="2017-02-09T09:36:36.231Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Angular2 入门-使用angular-cli快速建立项目">
 <meta name="twitter:description" content="1.前言时下web前端发展迅猛，新框架层出不穷，大家都知道三驾马车Vue2，Angular2，React。国内Vue2非常热门，百度热点趋势以1000%的涨幅在增加。Angular2在国外非常受欢迎，在国内的粉丝还非常少，文章不多，究其原因有这么几点:
@@ -470,8 +473,9 @@ angular本身概念难懂，并且学习曲线陡峭，上手困难;
 <p>&gt;</p>
 <blockquote>
 <p>live-reload-port ：gulp即时刷新 <code>livereload server</code>,修改项目src中任意的文件都可以看到浏览器自动刷新，尝试的修改一下app.component.ts中的文字，看看热部署是否马上生效？yes！it does！</p>
-<p>如果package.json文件没有设置start，则将直接启动node server，可以看到Script中还有其他的字段，使用的方法以及原理，与start是一致的</p>
-<p>关于Angluar-cli使用的几个基本命令</p>
+<p>如果package.json文件没有设置start，则将直接启动node server，可以看到Script中还有其他的字段，使用的方法以及原理，与start是一致的，要停止运行？只需要在cmd中输入ctrl+c就行。</p>
+</blockquote>
+<h3 id="Angular-cli-基础命令"><a href="#Angular-cli-基础命令" class="headerlink" title="Angular-cli 基础命令"></a>Angular-cli 基础命令</h3><p>关于Angluar-cli使用的几个基本命令</p>
 <table>
 <thead>
 <tr>
@@ -514,6 +518,25 @@ angular本身概念难懂，并且学习曲线陡峭，上手困难;
 </tr>
 </tbody>
 </table>
+<p>以创建Component为例子：</p>
+<blockquote>
+<p>命令行输入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&gt;ng g component test</div><div class="line">&gt;</div></pre></td></tr></table></figure>
+</blockquote>
+<p>&gt;</p>
+<blockquote>
+<p>即可创建新的Component：</p>
+<p><img src="http://ok0d190vi.bkt.clouddn.com/QQ%E6%88%AA%E5%9B%BE20170209172459.jpg" alt="创建新的component"></p>
+<p><img src="http://ok0d190vi.bkt.clouddn.com/%E5%88%9B%E5%BB%BA%E6%96%B0component.png" alt="创建新Component"></p>
+<p>看到 app下面多了一个test的文件夹(组件文件夹)，它应有的css，html，<em>.spec.ts(测试代码)，ts都生成了；如果没有组件化经验的同学可能会问，为啥有css，html，ts，</em>.spec.ts都放在这下面啊？因为组件化可以重复使用，提高效率，庞大的工程代码中可以提高可维护性，阅读性，方便测试等等；</p>
+<p>我们再创建一个模块</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&gt;ng g module test_module</div><div class="line">&gt;</div></pre></td></tr></table></figure>
+</blockquote>
+<p>&gt;</p>
+<blockquote>
+<p>可以得到以下结果，module被创建了哦</p>
+<p><img src="http://ok0d190vi.bkt.clouddn.com/%E5%88%9B%E5%BB%BA%E6%96%B0module.jpg" alt="创建新module"></p>
+<p>关于其他的命令，请大家自己尝试</p>
 </blockquote>
 
       
@@ -579,6 +602,10 @@ angular本身概念难懂，并且学习曲线陡峭，上手困难;
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/blog/2017/03/事件总线和消息队列.html" rel="prev" title="事件总线和消息队列">
+                事件总线和消息队列 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -652,7 +679,7 @@ angular本身概念难懂，并且学习曲线陡峭，上手困难;
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-count">8</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -723,7 +750,7 @@ angular本身概念难懂，并且学习曲线陡峭，上手困难;
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-前言"><span class="nav-number">1.</span> <span class="nav-text">1.前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Angular-CLI简介"><span class="nav-number">2.</span> <span class="nav-text">2 Angular-CLI简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-AngularCLI主要特性"><span class="nav-number">3.</span> <span class="nav-text">3.AngularCLI主要特性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-开始搭建Angluar2项目"><span class="nav-number">4.</span> <span class="nav-text">4.开始搭建Angluar2项目</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-Angular-CLI"><span class="nav-number">4.1.</span> <span class="nav-text">安装 Angular CLI</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建Angluar-2项目"><span class="nav-number">4.2.</span> <span class="nav-text">创建Angluar 2项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启动Angluar2项目"><span class="nav-number">4.3.</span> <span class="nav-text">启动Angluar2项目</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-前言"><span class="nav-number">1.</span> <span class="nav-text">1.前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Angular-CLI简介"><span class="nav-number">2.</span> <span class="nav-text">2 Angular-CLI简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-AngularCLI主要特性"><span class="nav-number">3.</span> <span class="nav-text">3.AngularCLI主要特性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-开始搭建Angluar2项目"><span class="nav-number">4.</span> <span class="nav-text">4.开始搭建Angluar2项目</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-Angular-CLI"><span class="nav-number">4.1.</span> <span class="nav-text">安装 Angular CLI</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建Angluar-2项目"><span class="nav-number">4.2.</span> <span class="nav-text">创建Angluar 2项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启动Angluar2项目"><span class="nav-number">4.3.</span> <span class="nav-text">启动Angluar2项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Angular-cli-基础命令"><span class="nav-number">4.4.</span> <span class="nav-text">Angular-cli 基础命令</span></a></li></ol></li></ol></div>
             
 
           </div>
